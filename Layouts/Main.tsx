@@ -9,6 +9,7 @@ const Main = ({ children }: Props) => {
     <>
       <Navbar />
       {children}
+      <h1>Footer</h1>
     </>
   );
 };
