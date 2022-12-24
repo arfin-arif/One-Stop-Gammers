@@ -1,9 +1,11 @@
+import { signIn, useSession } from "next-auth/react";
 import Image from "next/image";
 import { FaGamepad } from "react-icons/fa";
 import {
   MdCollections,
   MdHome,
   MdLogin,
+  MdLogout,
   MdOutlineCategory,
   MdPhotoAlbum,
   MdTrendingUp,
@@ -49,14 +51,11 @@ itemsHeader = [
     title: "GALLERY",
     icon: MdPhotoAlbum,
   },
-  {
-    id: 6,
-    title: "LOGIN",
-    icon: MdLogin,
-  },
 ];
 
 const NavHeader = (props: Props) => {
+  const { data } = useSession();
+
   return (
     <div className="bg-gray-100 p-5">
       <header className="flex flex-col md:flex-row  items-center justify-between mx-20">
@@ -67,12 +66,24 @@ const NavHeader = (props: Props) => {
           height={80}
           alt=""
         />
-        <div className="flex md:flex-grow-1  justify-evenly md:max-w-2xl ">
+        <div className="flex md:flex-grow-1 mt-5 justify-evenly md:max-w-2xl ">
           {itemsHeader?.map((item) => (
             <HeaderItem key={item.id} title={item.title} Icon={item.icon} />
           ))}
         </div>
+        <div onClick={signIn}>
+          {data?.user ? (
+            <button type="button" className="text-[#1670D1]">
+              <MdLogout />
+            </button>
+          ) : (
+            <button type="button" className="text-[#1670D1]">
+              <MdLogin />
+            </button>
+          )}
+        </div>
       </header>
+      <div></div>
     </div>
   );
 };
