@@ -8,8 +8,4 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-<<<<<<< HEAD
-}
-=======
 };
->>>>>>> xone-dev
