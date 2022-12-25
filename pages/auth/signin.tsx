@@ -1,7 +1,9 @@
 import { signIn, useSession } from "next-auth/react";
+import Head from "next/head";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import { FaGithub, FaGoogle } from "react-icons/fa";
+import Layout from "../../layout/Layout";
 
 type Props = {};
 
@@ -52,7 +54,10 @@ const Signin = (props: Props) => {
   };
 
   return (
-    <>
+    <Layout>
+      <Head>
+        <title>SignIn</title>
+      </Head>
       <form onSubmit={handleSubmit}>
         <input
           onChange={({ target }) =>
@@ -92,7 +97,7 @@ const Signin = (props: Props) => {
           </div>
         ))}
       </form>
-    </>
+    </Layout>
   );
 };
 
