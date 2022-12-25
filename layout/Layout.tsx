@@ -1,6 +1,7 @@
 import Header from '../components/header'
 import Footer from '../components/footer'
 import Head from 'next/head'
+import Trending from '../components/Trending/Trending';
 
 const Layout = ({ children }: any) => {
     return (
@@ -10,7 +11,8 @@ const Layout = ({ children }: any) => {
             </Head>
             <Header />
             <main >{children}</main>
-            <Footer />
+            <Trending></Trending>
+    
         </>
     );
 };
