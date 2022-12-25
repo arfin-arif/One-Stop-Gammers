@@ -15,11 +15,8 @@
     "@types/nodemailer": "^6.4.7",
     "@types/react": "18.0.26",
     "@types/react-dom": "18.0.10",
-<<<<<<< HEAD
     "daisyui": "^2.46.0",
     "framer-motion": "^6.5.1",
-=======
->>>>>>> 3151da3ea77de13d2df1311205d04a907d84e611
     "mongodb": "^4.13.0",
     "next": "13.1.0",
     "next-auth": "^4.18.7",
