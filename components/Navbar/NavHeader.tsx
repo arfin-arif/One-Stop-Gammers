@@ -1,5 +1,6 @@
-import { signIn, signOut, useSession } from "next-auth/react";
+import { signOut, useSession } from "next-auth/react";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import { FaGamepad } from "react-icons/fa";
 import {
   MdCollections,
@@ -55,8 +56,16 @@ itemsHeader = [
 
 const NavHeader = (props: Props) => {
   const { data } = useSession();
+  const { push, asPath } = useRouter();
 
-  console.log(data);
+  console.log(asPath);
+
+  let handleSignOut: () => Promise<void>;
+
+  handleSignOut = async () => {
+    const data = await signOut({ redirect: false, callbackUrl: "/some" });
+    push(data.url);
+  };
 
   return (
     <div className="bg-gray-100 p-5">
@@ -75,11 +84,19 @@ const NavHeader = (props: Props) => {
         </div>
         <div>
           {data?.user ? (
-            <button onClick={signOut} type="button" className="text-[#1670D1]">
+            <button
+              onClick={handleSignOut}
+              type="button"
+              className="text-[#1670D1]"
+            >
               <MdLogout />
             </button>
           ) : (
-            <button onClick={signIn} type="button" className="text-[#1670D1]">
+            <button
+              onClick={() => push(`/auth/signin?callbackUrl=${asPath}`)}
+              type="button"
+              className="text-[#1670D1]"
+            >
               <MdLogin />
             </button>
           )}
