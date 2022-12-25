@@ -29,7 +29,7 @@ const TrendingItem = ({image,prev,id,next}:Props) => {
            <p className='text-white lg:text-xl hidden lg:block'>Relive the beloved game that started it all, completely remastered.</p>
           </div>
           <div className="absolute flex justify-start transform -translate-y-1/2 left-24 w-2/5 lg:top-[600px] top-[520px]">
-          <button className="btn btn-primary mr-5">Buy Now</button>
+          <button className="btn bg-blue-400 mr-5">Buy Now</button>
 
 
           </div>

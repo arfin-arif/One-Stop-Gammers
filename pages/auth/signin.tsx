@@ -1,10 +1,12 @@
+// import { useLottie } from "lottie-react";
 import { signIn, useSession } from "next-auth/react";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import toast from "react-hot-toast";
 import { FaGithub, FaGoogle } from "react-icons/fa";
-
+import game from '../../public/game.json';
+import Lottie from "lottie-react";
 type Props = {};
 
 const providers = [
@@ -60,13 +62,24 @@ const Signin = (props: Props) => {
     signIn("email", { email, redirect: false });
   };
 
+  // const lottieAnimOptions = {
+	// 	animationData: game,
+	// 	loop: true,
+	// };
+
+	// const { View } = useLottie(lottieAnimOptions);
+
   return (
     <>
       <Head>
         <title>SignIn</title>
       </Head>
-      <div className="grid md:grid-cols-2 gird-cols-1 h-screen mx-24 my-12 gap-5 ">
-        <form className="h-screen" onSubmit={handleSubmit}>
+      <div className="grid md:grid-cols-2 gird-cols-1  mx-24 my-12 gap-5  ">
+
+        <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 py-20 h-4/5">
+
+       
+        <form className=" text-center" onSubmit={handleSubmit}>
           <input
             onChange={(e) => setEmail(e.target.value)}
             value={email}
@@ -85,7 +98,7 @@ const Signin = (props: Props) => {
           /> */}
           <button
             type="submit"
-            className="bg-blue-400 p-5 rounded mb-5 flex justify-center items-center mt-5"
+            className="bg-blue-400 p-5 rounded mb-5 ml-12 md:ml-32 flex justify-center items-center mt-5"
           >
             LogIn
           </button>
@@ -95,7 +108,7 @@ const Signin = (props: Props) => {
                 onClick={() =>
                   handleOAuthSignIn(provider.name.toLocaleLowerCase())
                 }
-                className="bg-blue-400 p-5 rounded mb-5 flex justify-center items-center mt-5"
+                className="bg-blue-400 p-5 md:ml-20 rounded mb-5 flex justify-center items-center mt-5"
               >
                 <provider.Icon />
                 <span>Sign in with {provider.name}</span>
@@ -103,8 +116,9 @@ const Signin = (props: Props) => {
             </div>
           ))}
         </form>
+        </div>
         <div>
-          <h1 className="text-4xl font-bold bg-gray-400 h-screen">Animation</h1>
+          <Lottie animationData={game}/>
         </div>
       </div>
     </>
