@@ -1,0 +1,81 @@
+.categories_container {
+  background: url("https://wallpapercave.com/wp/wp11312006.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.categories_container::before {
+  content: "";
+  background-color: #250404;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+.categories_text {
+  position: relative;
+  padding-left: 1rem;
+  display: inline-block;
+  z-index: 1;
+  padding: 5px 15px;
+  color: white;
+  transition: all .3s ease;
+}
+.categories_text::before {
+  content: " ";
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: aliceblue;
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+.categories_text:hover{
+  color: #7d0002;
+}
+.categories_text:hover::before {
+  width: 100%;
+}
+
+.categories_card {
+  position: relative;
+}
+
+.categories_card .image {
+  position: relative;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  transition: all 0.5s ease;
+  box-shadow: #64646f66 0px 7px 29px 0px;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+}
+
+.categories_card > a {
+  color: red;
+  z-index: 0;
+  font-weight: bold;
+}
+.categories_card:hover .image {
+  top: -2rem;
+}
+
+.arrow_icons {
+  margin-left: 0.4rem;
+  animation: arrow 1s ease alternate infinite;
+}
+
+@keyframes arrow {
+  from {
+    margin-left: 0.7rem;
+  }
+  to {
+    margin-left: 0.2rem;
+  }
+}

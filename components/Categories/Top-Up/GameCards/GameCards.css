@@ -1,0 +1,67 @@
+.action_content{
+  /* background-color: #ff068b; */
+  background: url('./../../../assets/action.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4.2rem 0;
+  box-shadow: #000000 0px -100px 36px -28px inset;
+
+}
+.simulation_content{
+  /* background-color: #ff068b; */
+  background: url('https://cdn.cloudflare.steamstatic.com/steam/apps/225360/ss_698d02af99a9fec6212ae921ee8b11db8a6f32c9.1920x1080.jpg?t=1660743196');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4.2rem 0;
+  /* box-shadow: #000000ec 0px -50px 50px -30px inset; */
+  box-shadow: #000000 0px -100px 36px -28px inset, #001408 0px 60px 30px -30px inset;
+
+}
+.classic_content{
+  /* background-color: #ff068b; */
+  background: url('https://images.ctfassets.net/vfkpgemp7ek3/3624980559/55329147270a1864d107715670af4a7e/clash-of-clans-gold-pass-revenue-2019.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4.2rem 0;
+  box-shadow: #ffffff 0px -70px 36px -28px inset, #000000c2 0px 70px 36px -28px inset;
+}
+
+
+
+
+
+.gameCards_text {
+    position: relative;
+    padding-left: 1rem;
+    display: inline-block;
+    z-index: 1;
+    padding: 5px 15px;
+  }
+
+.action_card{
+  box-shadow: #8e8e8eb3 0px 1px 30px 0.05px, #0000004d 0px 1px 1px 0px;
+}
+.simulation_card{
+  box-shadow: #8e8e8eb3 0px 1px 30px 0.05px, #0000004d 0px 1px 1px 0px;
+}
+.classic_card{
+  box-shadow: #8e8e8eb3 0px 1px 30px 0.05px, #0000004d 0px 1px 1px 0px;
+}
+
+
+
+
+  .gameCards_text::before {
+    content: " ";
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ff068b;
+    transition: all 0.3s ease;
+    z-index: -1;
+  }
+  .gameCards_text:hover::before {
+    width: 100%;
+  }
