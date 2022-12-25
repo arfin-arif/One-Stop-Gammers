@@ -94,6 +94,7 @@ const NavHeader = (props: Props) => {
           ) : (
             <button
               onClick={() => push(`/auth/signin?callbackUrl=${asPath}`)}
+              // onClick={() => signIn()}
               type="button"
               className="text-[#1670D1]"
             >
