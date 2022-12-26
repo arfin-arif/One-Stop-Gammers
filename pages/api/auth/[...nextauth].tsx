@@ -49,6 +49,7 @@ export default NextAuth({
       clientSecret: process.env.GOOGLE_CLIENT_SECRET as "string | undefined",
     }),
   ],
+  secret: process.env.NEXTAUTH_SECRET,
   pages: {
     signIn: "/auth/signin",
     // error: "/auth/error",
