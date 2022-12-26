@@ -1,5 +1,4 @@
 import React from "react";
-import DollarCards from "../../../Gift-card/DollarCards/DollarCards";
 import GameCards from "../GameCards";
 import Header from "../../Header/Header";
 import "./Home.css";
@@ -21,7 +20,7 @@ const Home = () => {
         </div>
       </div>
       <GameCards />
-      {/* <DollarCards/> */}
+
     </div>
   );
 };
