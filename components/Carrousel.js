@@ -20,7 +20,7 @@ const Carrousel = () => {
                                 <h4 className="uppercase my-3"><span className='bg-yellow-300 text-black font-semibold px-2 py-1 text-xl rounded italic'>console-pc</span></h4>
                                 <h1 className='uppercase my-3 text-4xl lg:text-6xl mb-3 md:mb-10 font-bold'>gta-v</h1>
                                 <h2 className='text-3xl md:text-2xl lg:text-3xl mb-3'>Play and enjoy with your <br /> friends</h2>
-                                <button className="btn bg-blue-400 uppercase font-semibold px-10">Get it now</button>
+                                <button className="btn bg-blue-400 uppercase font-semibold px-10 text-white">Get it now</button>
                             </div>
                         </div>
                     </div>
@@ -35,7 +35,7 @@ const Carrousel = () => {
                                 <h4 className="uppercase my-3"><span className='bg-yellow-300 text-black font-semibold px-2 py-1 text-xl rounded italic'>console-pc</span></h4>
                                 <h1 className='uppercase my-3 text-4xl lg:text-6xl mb-3 md:mb-10 font-bold'>minecraft</h1>
                                 <h2 className='text-3xl md:text-2xl lg:text-3xl mb-3 text'>Play and enjoy with your <br /> friends</h2>
-                                <button className="btn bg-blue-400 uppercase font-semibold px-10">Buy now</button>
+                                <button className="btn bg-blue-400 uppercase font-semibold px-10 text-white">Buy now</button>
                             </div>
                         </div>
                     </div>
@@ -50,7 +50,7 @@ const Carrousel = () => {
                                 <h4 className="uppercase my-3"><span className='bg-yellow-300 text-black font-semibold px-2 py-1 text-xl rounded italic'>console-pc</span></h4>
                                 <h1 className='uppercase my-3 text-4xl lg:text-6xl mb-3 md:mb-10 font-bold'>euro truck</h1>
                                 <h2 className='text-3xl md:text-2xl lg:text-3xl mb-3 text'>Play and enjoy with your <br /> friends</h2>
-                                <button className="btn bg-blue-400 uppercase font-semibold px-10">shop now</button>
+                                <button className="btn bg-blue-400 uppercase font-semibold px-10 text-white">shop now</button>
                             </div>
                         </div>
                     </div>
