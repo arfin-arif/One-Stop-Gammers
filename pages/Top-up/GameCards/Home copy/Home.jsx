@@ -1,9 +1,7 @@
 import React from "react";
-import DollarCards from "../../../Gift-card/DollarCards/DollarCards";
-import GameCards from "../GameCards";
 import Header from "../../Header/Header";
-import "./Home.css";
-import image from './../../../assets/sticker.png'
+import image from "./../../../../public/assets/Images/sticker.png";
+import "./Home.module.css";
 
 const Home = () => {
   return (
@@ -20,8 +18,8 @@ const Home = () => {
           <img src={image} alt="" />
         </div>
       </div>
-      <GameCards />
-      {/* <DollarCards/> */}
+      {/* <GameCards /> */}
+      {/* <DollarCards /> */}
     </div>
   );
 };

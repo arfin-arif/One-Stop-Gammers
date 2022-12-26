@@ -1,5 +1,5 @@
 import React from "react";
-import "./Purchase.css";
+import "./Purchase.module.css";
 
 const Purchase = () => {
   return (
@@ -16,23 +16,53 @@ const Purchase = () => {
             />
           </div>
           <div>
-            <h2 className="text-lg font-semibold underline text-red-700 ml-5">Top Up List</h2>
+            <h2 className="text-lg font-semibold underline text-red-700 ml-5">
+              Top Up List
+            </h2>
             <div className="grid grid-cols-2 gap-2 mt-2">
-                <button className="bg-pink-100 w-full rounded-md py-2 text-lg font-medium">10 Diamond</button>
-                <button className="bg-pink-100 w-full rounded-md py-2 text-lg font-medium">10 Diamond</button>
-                <button className="bg-pink-100 w-full rounded-md py-2 text-lg font-medium">10 Diamond</button>
-                <button className="bg-pink-100 w-full rounded-md py-2 text-lg font-medium">10 Diamond</button>
-                <button className="bg-pink-100 w-full rounded-md py-2 text-lg font-medium">10 Diamond</button>
-                <button className="bg-pink-100 w-full rounded-md py-2 text-lg font-medium">10 Diamond</button>
-                <button className="bg-pink-100 w-full rounded-md py-2 text-lg font-medium">10 Diamond</button>
-                <button className="bg-pink-100 w-full rounded-md py-2 text-lg font-medium">10 Diamond</button>
-                <button className="bg-pink-100 w-full rounded-md py-2 text-lg font-medium">10 Diamond</button>
-                <button className="bg-pink-100 w-full rounded-md py-2 text-lg font-medium">10 Diamond</button>
-                <button className="bg-pink-100 w-full rounded-md py-2 text-lg font-medium">10 Diamond</button>
+              <button className="bg-pink-100 w-full rounded-md py-2 text-lg font-medium">
+                10 Diamond
+              </button>
+              <button className="bg-pink-100 w-full rounded-md py-2 text-lg font-medium">
+                10 Diamond
+              </button>
+              <button className="bg-pink-100 w-full rounded-md py-2 text-lg font-medium">
+                10 Diamond
+              </button>
+              <button className="bg-pink-100 w-full rounded-md py-2 text-lg font-medium">
+                10 Diamond
+              </button>
+              <button className="bg-pink-100 w-full rounded-md py-2 text-lg font-medium">
+                10 Diamond
+              </button>
+              <button className="bg-pink-100 w-full rounded-md py-2 text-lg font-medium">
+                10 Diamond
+              </button>
+              <button className="bg-pink-100 w-full rounded-md py-2 text-lg font-medium">
+                10 Diamond
+              </button>
+              <button className="bg-pink-100 w-full rounded-md py-2 text-lg font-medium">
+                10 Diamond
+              </button>
+              <button className="bg-pink-100 w-full rounded-md py-2 text-lg font-medium">
+                10 Diamond
+              </button>
+              <button className="bg-pink-100 w-full rounded-md py-2 text-lg font-medium">
+                10 Diamond
+              </button>
+              <button className="bg-pink-100 w-full rounded-md py-2 text-lg font-medium">
+                10 Diamond
+              </button>
             </div>
-            <div className=" bg-gray-200 rounded-lg mt-5 text-center text-lg font-medium py-3 w-full">$10.00</div>
-            <button className="text-center py-2 w-full text-white bg-yellow-800 rounded-lg my-3">Add To Card</button>
-            <button className="text-center py-2 w-full text-white bg-yellow-800 rounded-lg">Buy Now</button>
+            <div className=" bg-gray-200 rounded-lg mt-5 text-center text-lg font-medium py-3 w-full">
+              $10.00
+            </div>
+            <button className="text-center py-2 w-full text-white bg-yellow-800 rounded-lg my-3">
+              Add To Card
+            </button>
+            <button className="text-center py-2 w-full text-white bg-yellow-800 rounded-lg">
+              Buy Now
+            </button>
           </div>
         </div>
       </div>
