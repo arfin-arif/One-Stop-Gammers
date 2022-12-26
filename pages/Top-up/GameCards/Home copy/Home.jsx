@@ -2,7 +2,7 @@ import React from "react";
 import GameCards from "../GameCards";
 import Header from "../../Header/Header";
 import "./Home.css";
-import image from './../../../assets/sticker.png'
+import image from '../../../../public/assets/Images/sticker.png'
 
 const Home = () => {
   return (

@@ -2,7 +2,7 @@ import React from "react";
 import DollarCards from './../DollarCards/DollarCards'
 import Header from "../Header copy/Header";
 import "./Home.css";
-// import image from './../../../../assets/sticker.png'
+
 
 const Home = () => {
   return (
@@ -19,7 +19,7 @@ const Home = () => {
           <img src={image} alt="" />
         </div>
       </div> */}
-      <DollarCards/>
+      <DollarCards />
     </div>
   );
 };
