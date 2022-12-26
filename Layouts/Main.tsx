@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar/Navbar";
 import Categories from '../components/Categories/Categories';
-
+import TrendingMatch from '../components/trendingMatch';
 import Footer from "../components/footer"
 import Trending from "../components/Trending/Trending"
 import Carrousel from '../components/Carrousel'
@@ -18,7 +18,9 @@ const Main = ({ children }: Props) => {
       <Trending></Trending>
       <Carrousel></Carrousel>
       <BigBanner></BigBanner>
+      <TrendingMatch />
       <Footer></Footer>
+
     </>
   );
 };
