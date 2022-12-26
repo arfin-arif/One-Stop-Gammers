@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
-import styles from "./../../styles/Categories.module.css";
-import img from "./../../public/assets/ConsoleNavBarImages/5272917.jpg";
+import styles from "./../styles/Categories.module.css";
+import img from "./../public/assets/ConsoleNavBarImages/5272917.jpg";
 
 const Categories = () => {
   return (
