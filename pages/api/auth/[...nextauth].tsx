@@ -55,4 +55,5 @@ export default NextAuth({
     // signOut: "/auth/signout",
   },
   adapter: MongoDBAdapter(clientPromise),
+  secret: process.env.NEXTAUTH_SECRET,
 });
