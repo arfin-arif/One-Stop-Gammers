@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar/Navbar";
 import Categories from '../components/Categories/Categories';
-
+import TrendingMatch from '../components/trendingMatch';
 import Footer from "../components/footer"
 import Trending from "../components/Trending/Trending"
 interface Props {
@@ -12,9 +12,11 @@ const Main = ({ children }: Props) => {
     <>
       <Navbar />
       {children}
-      <Categories/>
+      <Categories />
       <Trending></Trending>
+      <TrendingMatch />
       <Footer></Footer>
+
     </>
   );
 };
