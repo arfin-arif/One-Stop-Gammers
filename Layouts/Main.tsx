@@ -5,6 +5,7 @@ import Footer from "../components/footer"
 import Trending from "../components/Trending/Trending"
 import Carrousel from '../components/Carrousel'
 import BigBanner from '../components/BigBanner'
+import ContacForm from "../components/contacForm";
 interface Props {
   children?: React.ReactNode;
 }
@@ -19,6 +20,7 @@ const Main = ({ children }: Props) => {
       <Carrousel></Carrousel>
       <BigBanner></BigBanner>
       <TrendingMatch />
+      <ContacForm></ContacForm>
       <Footer></Footer>
 
     </>
