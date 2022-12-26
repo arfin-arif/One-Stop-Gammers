@@ -63,11 +63,11 @@ const Signin = (props: Props) => {
   };
 
   // const lottieAnimOptions = {
-	// 	animationData: game,
-	// 	loop: true,
-	// };
+  // 	animationData: game,
+  // 	loop: true,
+  // };
 
-	// const { View } = useLottie(lottieAnimOptions);
+  // const { View } = useLottie(lottieAnimOptions);
 
   return (
     <>
@@ -76,19 +76,20 @@ const Signin = (props: Props) => {
       </Head>
       <div className="grid md:grid-cols-2 gird-cols-1  mx-24 my-12 gap-5  ">
 
-        <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 py-20 h-4/5">
+        <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl  py-20 h-4/5">
 
-       
-        <form className=" text-center" onSubmit={handleSubmit}>
-          <input
-            onChange={(e) => setEmail(e.target.value)}
-            value={email}
-            type="email"
-            placeholder="Your Email"
-          />
-          <br />
-          <br />
-          {/* <input
+
+          <form className=" text-center" onSubmit={handleSubmit}>
+            <input
+              onChange={(e) => setEmail(e.target.value)}
+              value={email}
+              type="email"
+              placeholder="Your Email"
+              className="input-lg rounded-lg"
+            />
+            <br />
+            <br />
+            {/* <input
             onChange={({ target }) =>
               setUserInfo({ ...userInfo, password: target.value })
             }
@@ -96,29 +97,29 @@ const Signin = (props: Props) => {
             type="password"
             placeholder="Your Password"
           /> */}
-          <button
-            type="submit"
-            className="bg-blue-400 p-5 rounded mb-5 ml-12 md:ml-32 flex justify-center items-center mt-5"
-          >
-            LogIn
-          </button>
-          {providers.map((provider) => (
-            <div key={provider.id}>
-              <button
-                onClick={() =>
-                  handleOAuthSignIn(provider.name.toLocaleLowerCase())
-                }
-                className="bg-blue-400 p-5 md:ml-20 rounded mb-5 flex justify-center items-center mt-5"
-              >
-                <provider.Icon />
-                <span>Sign in with {provider.name}</span>
-              </button>
-            </div>
-          ))}
-        </form>
+            <button
+              type="submit"
+              className="bg-emerald-500 text-white p-5 rounded mb-5 ml-12 md:ml-32 flex justify-center items-center mt-5"
+            >
+              LogIn
+            </button>
+            {providers.map((provider) => (
+              <div key={provider.id}>
+                <button
+                  onClick={() =>
+                    handleOAuthSignIn(provider.name.toLocaleLowerCase())
+                  }
+                  className="bg-emerald-500 text-white p-5 md:ml-20 rounded mb-5 flex justify-center items-center mt-5"
+                >
+                  <provider.Icon />
+                  <span>Sign in with {provider.name}</span>
+                </button>
+              </div>
+            ))}
+          </form>
         </div>
         <div>
-          <Lottie animationData={game}/>
+          <Lottie animationData={game} />
         </div>
       </div>
     </>
