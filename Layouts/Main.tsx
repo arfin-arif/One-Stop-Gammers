@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar/Navbar";
-import Categories from '../components/Categories/Categories';
+import Categories from './../pages/Categories'
 import TrendingMatch from '../components/trendingMatch';
 import Footer from "../components/footer"
 import Trending from "../components/Trending/Trending"
