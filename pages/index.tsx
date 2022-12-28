@@ -1,5 +1,12 @@
 import { Inter } from "@next/font/google";
 import Head from "next/head";
+import Categories from './../pages/Categories'
+import TrendingMatch from '../components/trendingMatch';
+import Trending from "../components/Trending/Trending"
+import Carrousel from '../components/Carrousel'
+import BigBanner from '../components/BigBanner'
+import ContacForm from "../components/contacForm";
+import Team from "../components/team";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,7 +19,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* <Categories /> */}
+      <Categories />
+      <Trending></Trending>
+      <Carrousel></Carrousel>
+      <BigBanner></BigBanner>
+      <TrendingMatch />
+      <Team></Team>
+      <ContacForm></ContacForm>
     </>
   );
 }
