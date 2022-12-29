@@ -2,6 +2,7 @@ import Image from "next/image";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import styles from "./../styles/Categories.module.css";
 import img from "./../public/assets/ConsoleNavBarImages/5272917.jpg";
+import Link from "next/link";
 
 const Categories = () => {
   return (
@@ -28,14 +29,14 @@ const Categories = () => {
               ></Image>
               <Image />
             </div>
-            <a
+            <Link
               className=" flex items-center absolute right-5 bottom-2 text-red-700"
-              href="/"
+              href="/top-up"
             >
               Top Up 
               <BsFillArrowRightCircleFill className={`${styles.arrow_icons}`} />
 
-            </a>
+            </Link>
           </div>
           <div className={`${styles.categories_card} bg-white rounded-lg`}>
             <div className={`${styles.image} w-[300px] h-[200px] rounded-lg`}>
@@ -47,14 +48,14 @@ const Categories = () => {
                 height={1400}
               />
             </div>
-            <a
+            <Link
               className="flex items-center absolute right-5 bottom-2 text-red-700"
-              href="/"
+              href="/gift-card"
             >
               Gift Card 
               <BsFillArrowRightCircleFill className={`${styles.arrow_icons}`} />
 
-            </a>
+            </Link>
           </div>
           <div className={`${styles.categories_card} bg-white rounded-lg`}>
             <div className={`${styles.image} w-[300px] h-[200px] rounded-lg`}>
@@ -66,14 +67,14 @@ const Categories = () => {
                 height={1400}
               />
             </div>
-            <a
+            <Link
               className="flex items-center absolute right-5 bottom-2 text-red-700"
               href="/"
             >
               Game Accessories{" "}
               <BsFillArrowRightCircleFill className={`${styles.arrow_icons}`} />
 
-            </a>
+            </Link>
           </div>
           <div className={`${styles.categories_card} bg-white rounded-lg`}>
             <div className={`${styles.image} w-[300px] h-[200px] rounded-lg`}>

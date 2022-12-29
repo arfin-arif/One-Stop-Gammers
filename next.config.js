@@ -6,6 +6,6 @@ const nextConfig = {
 module.exports = {
   // nextConfig,
   images: {
-    domains: ["i.ibb.co", "image.tmdb.org", "wp.clutchpoints.com"],
+    domains: ["i.ibb.co","www.talkesport.com","cdn.mos.cms.futurecdn.net", "m.media-amazon.com", "image.tmdb.org","img.freepik.com", "wp.clutchpoints.com"],
   },
 };

@@ -1,12 +1,9 @@
-.action_content{
-  /* background-color: #ff068b; */
-  background: url('./../public/assets/Images/action.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 4.2rem 0;
-  box-shadow: #000000 0px -100px 36px -28px inset;
 
-}
+ .giftCard_card{
+    background-color: aliceblue;
+    box-shadow: rgba(0, 217, 255, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+
 .simulation_content{
   /* background-color: #ff068b; */
   background: url('https://cdn.cloudflare.steamstatic.com/steam/apps/225360/ss_698d02af99a9fec6212ae921ee8b11db8a6f32c9.1920x1080.jpg?t=1660743196');
