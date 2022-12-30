@@ -6,18 +6,7 @@ import Header from "./Header/Header";
 const Home = () => {
   return (
     <div className={styles.top_up}>
-      <Header />
-      <div className={`${styles.sticker} container mx-auto`}>
-        <div className={styles.sticker_image}>
-          <img src={image} alt="" width={200} height={200} />
-        </div>
-        <div className={styles.sticker_image}>
-          <img src={image} alt="" width={200} height={200} />
-        </div>
-        <div className={styles.sticker_image}>
-          <img src={image} alt="" width={200} height={200} />
-        </div>
-      </div>
+      <Header />     
       <GameCards />
     </div>
   );

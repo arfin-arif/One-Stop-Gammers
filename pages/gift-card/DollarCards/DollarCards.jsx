@@ -1,19 +1,17 @@
-import styles from "./../../../styles/top-up_gameCards.module.css";
+import styles from "./../../../styles/gift_card_dollar.module.css";
 import { GrGamepad } from "react-icons/gr";
 import Image from "next/image";
-import Link from "next/link";
+import  Link  from 'next/link';
 
-const GameCards = () => {
+const DollarCards = () => {
   return (
- 
+
     <div className="my-[5rem] mb-[10rem]">
       <div className={styles.gameCard_container}>
         <div className={styles.giftCard_content}>
           <div className="container mx-auto">
-            <h1
-              className={`${styles.gameCards_text} hover:text-white text-2xl font-bold mb-10`}
-            >
-              Action Games
+            <h1 className={`${styles.gameCards_text} text-2xl font-bold mb-10`}>
+              Gift Card
             </h1>
             <div
               className={`${styles.giftCard_card_group} grid grid-cols-5 gap-5 gap-y-10`}
@@ -23,16 +21,16 @@ const GameCards = () => {
               >
                 <Image
                   className="relative rounded-lg top-[-1rem] left-0 w-[240px] h-[160px] object-cover "
-                  src="https://www.talkesport.com/wp-content/uploads/free-fire-2.jpg"
+                  src="https://cdn.mos.cms.futurecdn.net/judCXGa4SXRAZ3Lmjaosf.jpg"
                   alt=""
                   width={500}
                   height={500}
                 />
                 <h3 className="mb-3 text-sm font-semibold">
-                  Free Fire Diamond
+                  Google Gift Card
                 </h3>
                 <h1 className="text-sm text-pink-700 hover:underline font-semibold text-right relative bottom-3 right-3 ">
-                  <Link href="/top-up/freefire">Buy Items</Link>
+                  <Link href="/gift-card/google">Buy Items</Link>
                 </h1>
               </div>
               <div
@@ -40,27 +38,29 @@ const GameCards = () => {
               >
                 <img
                   className="relative rounded-lg top-[-1rem] left-0 w-[240px] h-[160px] object-cover "
-                  src="https://cdn.cloudflare.steamstatic.com/steam/apps/578080/capsule_616x353.jpg?t=1671222003"
-                  alt=""
-                />
-                <h3 className="mb-3 text-sm font-semibold">Pubg UC</h3>
-                <h1 className="text-sm text-pink-700 hover:underline font-semibold text-right relative bottom-3 right-3 ">
-                  <Link href="/top-up/pubg">Buy Items</Link>
-                </h1>
-              </div>
-              <div
-                className={`${styles.giftCard_card}  rounded-lg px-3 bg-gray-300`}
-              >
-                <img
-                  className="relative rounded-lg top-[-1rem] left-0 w-[240px] h-[160px] object-cover "
-                  src="https://cdn.givemesport.com/wp-content/uploads/2022/05/Clash-of-Clans.jpg?width=1200&aspect_ratio=16:9"
+                  src="https://images.macrumors.com/t/TPiNn40dI2FatwyOudkXpY5Msz8=/1600x900/smart/article-new/2016/12/iTunes-gift-card.jpg"
                   alt=""
                 />
                 <h3 className="mb-3 text-sm font-semibold">
-                  Clash Of Clans (Gems)
+                 Itunes Gift Card
                 </h3>
                 <h1 className="text-sm text-pink-700 hover:underline font-semibold text-right relative bottom-3 right-3 ">
-                  <Link href="/top-up/coc">Buy Items</Link>
+                  <Link href="/gift-card/itunes">Buy Items</Link>
+                </h1>
+              </div>
+              <div
+                className={`${styles.giftCard_card}  rounded-lg px-3 bg-gray-300`}
+              >
+                <img
+                  className="relative rounded-lg top-[-1rem] left-0 w-[240px] h-[160px] object-cover "
+                  src="https://www.freeflys.com/wp-content/uploads/2019/10/free-amazon-gift-cards.png"
+                  alt=""
+                />
+                <h3 className="mb-3 text-sm font-semibold">
+                  Amazon Gift Card
+                </h3>
+                <h1 className="text-sm text-pink-700 hover:underline font-semibold text-right relative bottom-3 right-3 ">
+                  <Link href="/gift-card/amazon">Buy Items</Link>
                 </h1>
               </div>
             </div>
@@ -163,4 +163,4 @@ const GameCards = () => {
   );
 };
 
-export default GameCards;
+export default DollarCards;
