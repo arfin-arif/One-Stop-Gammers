@@ -28,31 +28,37 @@ itemsHeader = [
     id: 1,
     title: "HOME",
     icon: MdHome,
+    link: '/',
   },
   {
     id: 2,
     title: "TRENDING",
     icon: MdTrendingUp,
+    link: '/#trending',
   },
   {
     id: 3,
     title: "GAMES",
     icon: FaGamepad,
+    link: '/games',
   },
   {
     id: 4,
     title: "TOPUP",
     icon: MdCollections,
+    link: '/Top-up',
   },
   {
     id: 5,
     title: "CATEGORY",
     icon: MdOutlineCategory,
+    link: '/category',
   },
   {
     id: 6,
-    title: "GALLERY",
+    title: "Dashboard",
     icon: MdPhotoAlbum,
+    link: '/dashboard',
   },
   
 ];
@@ -91,7 +97,7 @@ const NavHeader = (props: Props) => {
         />
         <div className="flex md:flex-grow-1 mt-5 justify-evenly md:max-w-2xl ">
           {itemsHeader?.map((item) => (
-            <HeaderItem key={item.id} title={item.title} Icon={item.icon} />
+            <HeaderItem key={item.id} title={item.title} url={item.link} Icon={item.icon} />
           ))}
         </div>
        

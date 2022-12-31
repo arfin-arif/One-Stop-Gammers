@@ -3,7 +3,7 @@ import Countdown from "react-countdown";
 
 const trendingMatch = () => {
     const Completionist = () => <span>You are good to go!</span>;
-    return (<div className="bg-black  p-2 mb-2">
+    return (<div id="trending" className="bg-black  p-2 mb-2">
         <div>
             <h1 className="text-2xl  p-2 font-extrabold">Upcoming Matches</h1>
         </div>

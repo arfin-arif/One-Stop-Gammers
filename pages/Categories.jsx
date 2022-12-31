@@ -25,7 +25,7 @@ const Categories = () => {
                 src="https://wp.clutchpoints.com/wp-content/uploads/2022/10/Top-10-Upcoming-Xbox-Series-X-Console-Exclusives-not-coming-to-PS5-REFURB.jpg"
                 width={1400}
                 height={1400}
-                alt=""
+                alt="" 
               ></Image>
               <Image />
             </div>
