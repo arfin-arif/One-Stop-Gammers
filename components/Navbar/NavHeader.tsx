@@ -2,6 +2,7 @@ import { signOut, useSession } from "next-auth/react";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { FaGamepad } from "react-icons/fa";
+// import { AiOutlineShoppingCart,AiFillCloseCircle } from "react-icons/ai";
 import {
   MdCollections,
   MdHome,
@@ -12,6 +13,7 @@ import {
   MdTrendingUp,
 } from "react-icons/md";
 import HeaderItem from "./HeaderItem";
+// import { useRef } from "react";
 
 type Props = {};
 
@@ -52,6 +54,7 @@ itemsHeader = [
     title: "GALLERY",
     icon: MdPhotoAlbum,
   },
+  
 ];
 
 const NavHeader = (props: Props) => {
@@ -66,6 +69,15 @@ const NavHeader = (props: Props) => {
     const data = await signOut({ redirect: false, callbackUrl: "/some" });
     push(data.url);
   };
+
+  // const toggleCart=()=>{
+  //       if(ref.current.classList.contains('translate-x-full')){
+  //         ref.current.classList.remove("translate-x-full")
+  //         ref.current.classList.add('translate-x-0')
+  //       }
+  // }
+
+  // const ref=useRef()
 
   return (
     <div className="bg-gray-100 p-5">
@@ -82,6 +94,7 @@ const NavHeader = (props: Props) => {
             <HeaderItem key={item.id} title={item.title} Icon={item.icon} />
           ))}
         </div>
+       
         <div>
           {data?.user ? (
             <button
@@ -91,6 +104,8 @@ const NavHeader = (props: Props) => {
             >
               <MdLogout />
             </button>
+           
+            
           ) : (
             <button
               onClick={() => push(`/auth/signin?callbackUrl=${asPath}`)}
@@ -99,9 +114,27 @@ const NavHeader = (props: Props) => {
               className="text-[#1670D1]"
             >
               <MdLogin />
+              
             </button>
+            
           )}
+          
         </div>
+
+        {/* <div onClick={toggleCart} className="cart  right-0 top-0">
+          <AiOutlineShoppingCart className="text-xl md:text-2xl"/>
+        </div>
+        <div ref={ref} className="sideCart top-0 right-0 bg-slate-400 p-10 transform transition-transform translate-x-full">
+             <h2 className="font-bold text-xl">Cart</h2>
+             <span onClick={toggleCart} className="relative -top-16 -right-14 cursor-pointer"><AiFillCloseCircle/></span>
+           <ol>
+            <li>
+
+            </li>
+           </ol>
+        </div> */}
+
+       
       </header>
       <div>{data?.user && data?.user?.name}</div>
     </div>
